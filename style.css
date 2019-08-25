@@ -1,0 +1,23 @@
+#buttons-view{
+    color:#eee;
+    background-color:royalblue;
+    text-align: center;
+}
+
+#animal-form{
+    text-align: center;
+    border: 1px dotted indianred;
+    background-color: yellow;
+}
+
+#add-animal{
+    background-color: orangered;
+}
+
+.animal{
+    border: 10px solid orangered;
+}
+
+button{
+
+}
