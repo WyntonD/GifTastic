@@ -1,7 +1,20 @@
 
-$("#koala").on("click", function(){
+var animals = ["Koala", "Falcon", "Monkey"];
+
+$("#submit").on("click", function(){
+    var newButton = $("#buttons").prepend("<button>");
+    $(this).text(animals[i]);
+    console.log("new button");
+
+});
+
+
+
+var animals = ["Cheetah", "Girrafe", "Panther"];
+
+var koala = $("#koala").on("click", function(){
     
-    var person = $(this).attr("data-person");
+    var person = $(this).attr("data-name");
     
     var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + person + 
     "&api_key=yV94fHMPuqKi6PMkpLJQ5d5TxRmxg5of";
@@ -30,7 +43,7 @@ $("#koala").on("click", function(){
              gifDiv.prepend(p);
              gifDiv.prepend(personImage);
 
-             $("#images").prepend(gifDiv);
+             $("#images").append(gifDiv);
                 }   
             });
         });
