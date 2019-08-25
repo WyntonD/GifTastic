@@ -7,19 +7,26 @@ function renderButtons() {
 
   for (var i = 0; i < animals.length; i++) {
 
-    
-
-    var a = $("<button>");
+     var a = $("<button>");
 
     a.addClass("animal");
    
-    a.attr("data-name", animals[i]);
+    a.attr("data-person", animals[i]);
   
     a.text(animals[i]);
   
     $("#buttons-view").append(a);
+
+
   }
+
+  $("button").on("click", function(){
+  
+    console.log("clicked");
+          });
 }
+
+
 
 $("#add-animal").on("click", function(event) {
 
@@ -34,5 +41,5 @@ $("#add-animal").on("click", function(event) {
     renderButtons();
   });
 
- 
+
   renderButtons();
