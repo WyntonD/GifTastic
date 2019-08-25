@@ -6,7 +6,7 @@
 
 #animal-form{
     text-align: center;
-    border: 1px dotted indianred;
+    border: 1px dotted orangered;
     background-color: yellow;
 }
 
@@ -19,5 +19,5 @@
 }
 
 button{
-
+background-color:yellow;
 }
